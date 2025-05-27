@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-app">
+            <div class="container">
+                <form class="input-area">
+                    <input type="text" id="task-input" class="todo-input" placeholder="Ajouter une tâche">
+                    <button type="submit" onclick="displayToList(event)" class="submit-todo" id="submit-task">ajouter une tache</button>
+                </form>
+                <ul id="display-todo" class="todo-list">
+                    <li>
+                        Tache 1
+                        <button class="edit-btn" onclick="editTask(event)">Modifier</button>
+                        <button class="delete-btn" onclick="deleteTask(event)">Supprimer</button>
+                    </li>
+                </ul>
+            </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html
